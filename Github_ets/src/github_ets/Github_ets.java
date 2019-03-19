@@ -17,10 +17,8 @@ public class Github_ets {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("hola soy alejandro 3");
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Tomar un entero: ");
         int valor = input.nextInt();
         String binario = "";
 
@@ -32,7 +30,7 @@ public class Github_ets {
             valor = valor/2;
         }
 
-        System.out.print(binario);
+        
         int contar = 0;
         for(int i = 0; i < binario.length(); i++){
             if(binario.charAt(i) == '1'){
@@ -41,9 +39,9 @@ public class Github_ets {
         }
 
         if(contar%2 == 0){
-            System.out.println(" --> Es malvado");
+            System.out.println("MALVADO");
         }else{
-            System.out.println(" --> No es malvado");
+            System.out.println("NO MALVADO");
         }
 
 
