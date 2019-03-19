@@ -18,7 +18,7 @@ public class Github_ets {
      */
     public static void main(String[] args) {
         System.out.println("hola soy alejandro 3");
-        
+
         Scanner input = new Scanner(System.in);
         System.out.print("Tomar un entero: ");
         int valor = input.nextInt();
@@ -33,6 +33,22 @@ public class Github_ets {
         }
 
         System.out.print(binario);
+        int contar = 0;
+        for(int i = 0; i < binario.length(); i++){
+            if(binario.charAt(i) == '1'){
+                contar++;
+            }
+        }
+
+        if(contar%2 == 0){
+            System.out.println(" --> Es malvado");
+        }else{
+            System.out.println(" --> No es malvado");
+        }
+
+
+        }
+
     }
     
-}
+
